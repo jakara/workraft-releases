@@ -1,0 +1,24 @@
+version: 1.2.2-alpha.2.1
+files:
+  - url: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.2.1/workraft-1.2.2-alpha.2.1-mac-arm64.zip
+    sha512: WHnIBCuuWAJ4ZCyyeYGQibA+xPedH4yCRTGItZvbdVibWqU2YaKBc/t5ZoIooDwX0vZxU9lpOTwow7KPa7zw7w==
+    size: 374459963
+path: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.2.1/workraft-1.2.2-alpha.2.1-mac-arm64.zip
+sha512: WHnIBCuuWAJ4ZCyyeYGQibA+xPedH4yCRTGItZvbdVibWqU2YaKBc/t5ZoIooDwX0vZxU9lpOTwow7KPa7zw7w==
+releaseDate: '2026-10-31T12:21:47.197Z'
+releaseName: Workraft 1.2.2-alpha.2.1
+releaseNotes: |
+  # Workraft 1.2.2-alpha.2.1 · macOS arm64 预发布
+
+  面向 Apple Silicon Mac 的 Workraft 发行版，使用 Developer ID 签名和 Apple 公证。
+
+  - 接入 Workraft 自有 GitHub 更新源，启动后自动检查新版本；下载及安装重启由用户确认。
+  - 整合 Harness 0.2.2-alpha.2，包含定时任务、文件操作、窄窗口导航及轨迹查看等改进；可选能力保持原有启用策略。
+  - Work/Create 模式条只在空白 Session 显示，开始对话或恢复既有 Session 后隐藏，新建 Session 时恢复。
+  - 统一应用内发行版本显示，改进安装回滚副本的搜索表现，并更新八种语言的 Session Log 文案。
+  - 学校登录作为可选客户端能力，通用版继续免登录使用。真实学校登录需要校方部署并登记 CAS 桥接服务，不依赖公共学校认证服务启动。
+  - 保留本地 MCP/Playbook 集成及 Workraft 的独立数据目录。
+
+  本次仅提供 macOS arm64 安装包及更新元数据。此前没有更新源的预览包需要手动安装一次，之后可使用应用内更新入口。
+
+  版本映射：上游运行时为 `0.2.2-alpha.2`，Workraft 为 `1.2.2-alpha.2.1`，末尾 `.1` 表示本次自有修订。此版本仍为预发布版本。
