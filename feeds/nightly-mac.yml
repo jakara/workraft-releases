@@ -1,27 +1,16 @@
-version: 1.2.2-alpha.3
+version: 1.2.2-alpha.3.1
 files:
-  - url: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.3/workraft-1.2.2-alpha.3-mac-arm64.zip
-    sha512: FsalIfO7umDRKG/r1Tn7ngrrCxGtF8s+XsU013QnbEoXYlxRfEoYSoegSqICrdJ33tLMVLrYd8N9FeWyWbF8zA==
-    size: 379401411
-path: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.3/workraft-1.2.2-alpha.3-mac-arm64.zip
-sha512: FsalIfO7umDRKG/r1Tn7ngrrCxGtF8s+XsU013QnbEoXYlxRfEoYSoegSqICrdJ33tLMVLrYd8N9FeWyWbF8zA==
-releaseDate: '2026-11-04T05:16:56.084Z'
-releaseName: Workraft 1.2.2-alpha.3
+  - url: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.3.1/workraft-1.2.2-alpha.3.1-mac-arm64.zip
+    sha512: Y6SN4x7H0eeJ6t2QiJ1IycF3X7/tzK/a0/qJcYPAV/6RYy9oSrCVeB8lB1urbA4YEKvHsFF33wzPk821o74tjA==
+    size: 379401873
+path: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.3.1/workraft-1.2.2-alpha.3.1-mac-arm64.zip
+sha512: Y6SN4x7H0eeJ6t2QiJ1IycF3X7/tzK/a0/qJcYPAV/6RYy9oSrCVeB8lB1urbA4YEKvHsFF33wzPk821o74tjA==
+releaseDate: '2026-11-04T12:12:52.092Z'
+releaseName: Workraft 1.2.2-alpha.3.1
 releaseNotes: |+
-  ## 1.2.2-alpha.3 · 2026-11-04
+  ## 1.2.2-alpha.3.1 · 2026-11-04
 
-  ### 新增
+  ### 修复
 
-  - 「网页搜索与获取」中可分别选择搜索与网页抓取服务。搜索新增 Workraft Auto、Exa 和 Perplexity，后两者使用各自的 API 密钥。切换对话模型无需重新配置网页抓取。若之前固定选择了已退役的 Exa 或 Perplexity，请在搜索设置中重新选择对应条目。
-  - Workraft Auto 在对话使用 DeepSeek 官方 API 时优先走 DeepSeek 搜索；其他模型或网关走配置的备选搜索。未配置备选时，其他模型路由不显示搜索工具。显式选择搜索服务时，搜索不随对话模型切换。
-  - 新增 MCP Manager，用于连接外部 MCP 服务。Workraft 的 MCP Gateway 继续用于向外部客户端提供本地工具，两项功能可以独立启用。
-
-  ### 更新
-
-  - 同步 DeepSeek Harness 0.2.2-alpha.3，纳入上游 Team 会话能力与可选语音输入插件。
-  - 签名版继续从 Workraft 的 GitHub 更新源接收更新。此 macOS arm64 预发布沿用 nightly，上一版无需切换渠道。发布工具已支持为后续正式版同时维护 stable 与旧客户端使用的 latest。
-
-  ### 保留
-
-  - 通用版启动可直接进入工作区，学校登录为可选项。保留当前版本显示，以及开始会话后锁定工作／创作模式的行为。
+  - 修复共享配置目录中旧版 Computer Use 依赖导致工作区和历史会话列表显示为空的问题。桌面端优先加载发行包内同版本的核心存储和 Computer Use 组件，保留已有工作区、会话和插件配置。
 
