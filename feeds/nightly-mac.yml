@@ -1,24 +1,27 @@
-version: 1.2.2-alpha.2.1
+version: 1.2.2-alpha.3
 files:
-  - url: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.2.1/workraft-1.2.2-alpha.2.1-mac-arm64.zip
-    sha512: WHnIBCuuWAJ4ZCyyeYGQibA+xPedH4yCRTGItZvbdVibWqU2YaKBc/t5ZoIooDwX0vZxU9lpOTwow7KPa7zw7w==
-    size: 374459963
-path: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.2.1/workraft-1.2.2-alpha.2.1-mac-arm64.zip
-sha512: WHnIBCuuWAJ4ZCyyeYGQibA+xPedH4yCRTGItZvbdVibWqU2YaKBc/t5ZoIooDwX0vZxU9lpOTwow7KPa7zw7w==
-releaseDate: '2026-10-31T12:21:47.197Z'
-releaseName: Workraft 1.2.2-alpha.2.1
-releaseNotes: |
-  # Workraft 1.2.2-alpha.2.1 · macOS arm64 预发布
+  - url: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.3/workraft-1.2.2-alpha.3-mac-arm64.zip
+    sha512: FsalIfO7umDRKG/r1Tn7ngrrCxGtF8s+XsU013QnbEoXYlxRfEoYSoegSqICrdJ33tLMVLrYd8N9FeWyWbF8zA==
+    size: 379401411
+path: https://github.com/jakara/workraft-releases/releases/download/v1.2.2-alpha.3/workraft-1.2.2-alpha.3-mac-arm64.zip
+sha512: FsalIfO7umDRKG/r1Tn7ngrrCxGtF8s+XsU013QnbEoXYlxRfEoYSoegSqICrdJ33tLMVLrYd8N9FeWyWbF8zA==
+releaseDate: '2026-11-04T05:16:56.084Z'
+releaseName: Workraft 1.2.2-alpha.3
+releaseNotes: |+
+  ## 1.2.2-alpha.3 · 2026-11-04
 
-  面向 Apple Silicon Mac 的 Workraft 发行版，使用 Developer ID 签名和 Apple 公证。
+  ### 新增
 
-  - 接入 Workraft 自有 GitHub 更新源，启动后自动检查新版本；下载及安装重启由用户确认。
-  - 整合 Harness 0.2.2-alpha.2，包含定时任务、文件操作、窄窗口导航及轨迹查看等改进；可选能力保持原有启用策略。
-  - Work/Create 模式条只在空白 Session 显示，开始对话或恢复既有 Session 后隐藏，新建 Session 时恢复。
-  - 统一应用内发行版本显示，改进安装回滚副本的搜索表现，并更新八种语言的 Session Log 文案。
-  - 学校登录作为可选客户端能力，通用版继续免登录使用。真实学校登录需要校方部署并登记 CAS 桥接服务，不依赖公共学校认证服务启动。
-  - 保留本地 MCP/Playbook 集成及 Workraft 的独立数据目录。
+  - 「网页搜索与获取」中可分别选择搜索与网页抓取服务。搜索新增 Workraft Auto、Exa 和 Perplexity，后两者使用各自的 API 密钥。切换对话模型无需重新配置网页抓取。若之前固定选择了已退役的 Exa 或 Perplexity，请在搜索设置中重新选择对应条目。
+  - Workraft Auto 在对话使用 DeepSeek 官方 API 时优先走 DeepSeek 搜索；其他模型或网关走配置的备选搜索。未配置备选时，其他模型路由不显示搜索工具。显式选择搜索服务时，搜索不随对话模型切换。
+  - 新增 MCP Manager，用于连接外部 MCP 服务。Workraft 的 MCP Gateway 继续用于向外部客户端提供本地工具，两项功能可以独立启用。
 
-  本次仅提供 macOS arm64 安装包及更新元数据。此前没有更新源的预览包需要手动安装一次，之后可使用应用内更新入口。
+  ### 更新
 
-  版本映射：上游运行时为 `0.2.2-alpha.2`，Workraft 为 `1.2.2-alpha.2.1`，末尾 `.1` 表示本次自有修订。此版本仍为预发布版本。
+  - 同步 DeepSeek Harness 0.2.2-alpha.3，纳入上游 Team 会话能力与可选语音输入插件。
+  - 签名版继续从 Workraft 的 GitHub 更新源接收更新。此 macOS arm64 预发布沿用 nightly，上一版无需切换渠道。发布工具已支持为后续正式版同时维护 stable 与旧客户端使用的 latest。
+
+  ### 保留
+
+  - 通用版启动可直接进入工作区，学校登录为可选项。保留当前版本显示，以及开始会话后锁定工作／创作模式的行为。
+
